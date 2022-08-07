@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: DEPARTMENT-SERVICE  datasource:    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: nagen   jpa:    show-sql: true    hibernate:      ddl-auto: update
+server:  port: 1002
+  
+eureka:  client:    fetch-registry: true
+    register-with-eureka: true
+    service-url:      defaultZone: http://localhost:8761/eureka
+  instance:    hostname: localhost
+
